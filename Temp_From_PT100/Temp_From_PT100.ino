@@ -21,6 +21,7 @@
  * Github: https://github.com/RonanB96/Read-Temp-From-PT100-With-Arduino
  * Circuit: https://circuits.io/circuits/2962051-reading-temperature-from-pt100/edit#breadboard
  * Blog: https://roboroblog.wordpress.com
+ * Instrustable Post:http://www.instructables.com/id/Reading-Temperature-From-PT100-Using-Arduino/ 
   */
 
 // You'll need to download this timer library from here
