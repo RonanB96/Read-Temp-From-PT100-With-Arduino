@@ -19,6 +19,7 @@
  * 
  * Written by Roboro
  * Github: https://github.com/RonanB96/Read-Temp-From-PT100-With-Arduino
+ * Circuit: https://circuits.io/circuits/2962051-reading-temperature-from-pt100/edit#breadboard
  * Blog: https://roboroblog.wordpress.com
   */
 
@@ -39,7 +40,7 @@ float slope = 14.187;
 float R0 = 100.0;
 float alpha = 0.00385;
 
-int Vin = A0; // Vin is Analog  Pin A0
+int Vin = A0; // Vin is Analog Pin A0
 
 Timer t; // Define Timer object
 
@@ -60,6 +61,8 @@ void takeReading(){
   Rx = V*slope+C; //y=mx+c
   // Resistance to Temperature
   temp= (Rx/R0-1.0)/alpha; // from Rx = R0(1+alpha*X)
-  Serial.println(V);
+  // Uncommect to convet celsius to fehrenheit
+  // temp = temp*1.8+32; 
+  Serial.println(temp);
 }
 
