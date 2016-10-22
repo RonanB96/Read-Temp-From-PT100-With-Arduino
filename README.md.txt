@@ -1,1 +1,0 @@
-This is a simple code to read the temperature from a PT100 using an arduino
